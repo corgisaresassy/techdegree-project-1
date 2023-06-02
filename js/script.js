@@ -12,50 +12,57 @@ project 1 - A Random Quote Generator
 ***/
 //initialize the array quotes with five empty objects
 //this could all be done much more easily with a constructor and class but for now we'll do it this way.
-const quotes = [{},{},{},{},{}]
+const quotes = [{
+  //object 1 information addition
+  quote:"Happiness is a warm puppy",
+  source:"Charles M. Schulz",
+  citation:"Super Box of Snoopy:A PEANUTS Collection",
+  //utilize the getWordCount() function to populate the wordcount property
+  wordcount:getWordCount("Happiness is a warm puppy")
+},
+{
+  //object 2 information addition
 
-//object 1 information addition
+  quote:"When an eighty-five pound mammal licks your tears away, then tries to sit on your lap, it’s hard to feel sad.",
+  source:"Kristan Higgins",
+  year:2020,
+  citation:"Catch of the Day",
+  //utilize the getWordCount() function to populate the wordcount property
+  wordcount:getWordCount("When an eighty-five pound mammal licks your tears away, then tries to sit on your lap, it’s hard to feel sad."),
 
-quotes[0].quote="Happiness is a warm puppy";
-quotes[0].source="Charles M. Schulz";
-quotes[0].citation="Super Box of Snoopy:A PEANUTS Collection";
-//utilize the getWordCount() function to populate the wordcount property
-quotes[0].wordcount=getWordCount(quotes[0].quote);
+},
+{
+  //object 3 information addition
 
+  quote:"Outside of a dog, a book is man's best friend. Inside of a dog it's too dark to read.",
+  source:"Jimmy Husson",
+  year:1952,
+  citation:"The Nashville Tennessean",
+  //utilize the getWordCount() function to populate the wordcount property
+  wordcount:getWordCount("Outside of a dog, a book is man's best friend. Inside of a dog it's too dark to read.")
 
-//object 2 information addition
+},
+{
+  //object 4 information addition
 
-quotes[1].quote="When an eighty-five pound mammal licks your tears away, then tries to sit on your lap, it’s hard to feel sad.";
-quotes[1].source="Kristan Higgins";
-quotes[1].year=2020;
-quotes[1].citation="Catch of the Day";
-//utilize the getWordCount() function to populate the wordcount property
-quotes[1].wordcount=getWordCount(quotes[1].quote);
+  quote:"Petting, scratching, and cuddling a dog could be as soothing to the mind and heart as deep meditation and almost as good for the soul as prayer.",
+  source:"Dean Koontz",
+  year:2007,
+  citation:"False Memory",
+  //utilize the getWordCount() function to populate the wordcount property
+  wordcount:getWordCount("Petting, scratching, and cuddling a dog could be as soothing to the mind and heart as deep meditation and almost as good for the soul as prayer.")
 
-//object 3 information addition
+},
+{
+  //object 5 information addition
 
-quotes[2].quote="Outside of a dog, a book is man's best friend. Inside of a dog it's too dark to read.";
-quotes[2].source="Jimmy Husson";
-quotes[2].year=1952;
-quotes[2].citation="The Nashville Tennessean";
-//utilize the getWordCount() function to populate the wordcount property
-quotes[2].wordcount=getWordCount(quotes[2].quote);
+  quote:"If there are no dogs in Heaven, then when I die I want to go where they went",
+  source:"Will Rogers",
+  //utilize the getWordCount() function to populate the wordcount property
+  wordcount:getWordCount("If there are no dogs in Heaven, then when I die I want to go where they went")
 
-//object 4 information addition
+}]
 
-quotes[3].quote="Petting, scratching, and cuddling a dog could be as soothing to the mind and heart as deep meditation and almost as good for the soul as prayer.";
-quotes[3].source="Dean Koontz";
-quotes[3].year=2007;
-quotes[3].citation="False Memory";
-//utilize the getWordCount() function to populate the wordcount property
-quotes[3].wordcount=getWordCount(quotes[3].quote);
-
-//object 5 information addition
-
-quotes[4].quote="If there are no dogs in Heaven, then when I die I want to go where they went";
-quotes[4].source="Will Rogers";
-//utilize the getWordCount() function to populate the wordcount property
-quotes[4].wordcount=getWordCount(quotes[4].quote);
 
 
 /***
